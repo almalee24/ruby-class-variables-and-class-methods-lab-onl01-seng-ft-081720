@@ -19,7 +19,7 @@ class Song
   end 
   
   def self.genres 
-    @@genres = @@genres.uniq
+   @@genres.uniq!
   end
   
   def self.artists
@@ -31,6 +31,7 @@ class Song
     @@genres.each {|song| frequency[song] += 1}
     frequency
   end
+  
   def self.artist_count
   end
 end
