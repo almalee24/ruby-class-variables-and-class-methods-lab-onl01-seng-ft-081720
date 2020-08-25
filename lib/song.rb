@@ -29,7 +29,7 @@ class Song
   def self.genre_count
     frequency = Hash.new(0)
     @@genres.each {|song| frequency[song] += 1}
-    puts frequency
+    frequency
   end
   def self.artist_count
   end
